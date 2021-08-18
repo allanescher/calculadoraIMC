@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles/style.css">
+        <title>Calculadora IMC</title>
+    </head>
+    <body>
+        <img src="imagens/fundo.png" alt="Cálculo IMC" id="iamgem">
+        <h1>Calculadora de IMC</h1>
+        <table>
+            <tr>
+                <td><label for="nome">Nome:</label></td>
+                <td><input type="text" id="inNome" name="nome" placeholder="Informe seu nome"></td>
+            </tr>
+            <tr>
+                <td><label for="kilos">Peso:</label></td>
+                <td><input value="" id="inPeso" name="kilos" type="number" step="0.1" min="0" max="300" placeholder="Informe seu peso: 75"></td>
+            </tr>
+            <tr>
+                <td><label for="altura">Altura:</label></td>
+                <td><input value="" id="inAltura" type="number" name="altura" step="0.1" min="0" max="2,50" placeholder="Informe sua altura: 1,80"></td>
+            </tr>
+        </table>
+        <button id="clicar" type="submit">Calcular</button>
+        <button id="limp" type="reset">Limpar</button>
+        <h2 id="result"></h2>
+    </body>
+    <script src="javascript/main.js"></script>
+</html>
